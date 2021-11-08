@@ -20,11 +20,10 @@
 
 .name {
   color: secondary-color;
-  font-weight: 300;
   font-size: 56px;
   margin: 0;
-  font-family: "Roboto Condensed", sans-serif;
   padding: 0;
+  font-weight: 300;
 }
 
 .job {
@@ -34,22 +33,21 @@
   align-items: center;
   width: 80%;
   margin: 1rem 0 2rem 0;
-  font-family: "Roboto Condensed", sans-serif;
 }
 
 .job h1 {
   color: main-text-color;
   margin: 0;
-  font-weight: 200;
   font-size: 66px;
   text-align: center;
+  font-weight: 300;
 }
 
 .heroContainer button {
   background-color: secondary-color;
-  font-weight: 300;
   font-size: 32px;
-  font-family: "Roboto Condensed", sans-serif;
   border: none;
   padding: 0.5rem 1rem;
+  font-weight: 300;
+  font-family: "Roboto Condensed", sans-serif;
 }
