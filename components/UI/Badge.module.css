@@ -1,0 +1,13 @@
+.badgeContainer {
+  background-color: white;
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.badgeContainer img {
+  width: 70%;
+  height: 70%;
+}
