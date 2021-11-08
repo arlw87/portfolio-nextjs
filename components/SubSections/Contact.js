@@ -4,8 +4,12 @@ import Link from "next/link";
 
 const Contact = (props) => {
   return (
-    <SubSectionLayout title={"Contact Me"} isBackgroundOne={true}>
-      <div className={styles.container}>
+    <SubSectionLayout
+      title={"Contact Me"}
+      isBackgroundOne={true}
+      id={"contactMe"}
+    >
+      <div id="contact" className={styles.container}>
         <Link href="https://github.com/arlw87">
           <img alt="GitHub" src="./media/contact/github.png" />
         </Link>

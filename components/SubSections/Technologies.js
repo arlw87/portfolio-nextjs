@@ -69,7 +69,11 @@ const listOfTech = [
 
 const Technologies = (props) => {
   return (
-    <SubSectionLayout title={"Technologies"} isBackgroundOne={false}>
+    <SubSectionLayout
+      title={"Technologies"}
+      isBackgroundOne={false}
+      id={"technologies"}
+    >
       <div className={styles.contentContainer}>
         <h3>Languages, frameworks and hardware i have worked with</h3>
         <div className={styles.badgeContainer}>

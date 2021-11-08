@@ -8,7 +8,10 @@ const SubSectionLayout = (props) => {
   }
 
   return (
-    <div className={`${styles.subSectionContainer} ${background}`}>
+    <div
+      className={`${styles.subSectionContainer} ${background}`}
+      id={props.id}
+    >
       <h2>{props.title}</h2>
       <div className={styles.content}>{props.children}</div>
     </div>

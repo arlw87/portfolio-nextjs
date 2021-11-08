@@ -4,7 +4,11 @@ import styles from "./Achievements.module.css";
 
 const Achievements = (props) => {
   return (
-    <SubSectionLayout title={"Achievements"} backgroundOne={true}>
+    <SubSectionLayout
+      title={"Achievements"}
+      backgroundOne={true}
+      id={"achievements"}
+    >
       <div className={styles.container}>
         <Link href={"https://confirm.udacity.com/Q73DZFCM"}>
           <h3>

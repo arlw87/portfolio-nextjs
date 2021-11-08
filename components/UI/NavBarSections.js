@@ -1,20 +1,23 @@
 import styles from "./NavBarSections.module.css";
+import Link from "next/link";
+
+// There may be a better way to do the linking of the section on the home page
 
 const NavBarSections = () => {
   const sections = [
     {
       name: "About Me",
-      link: "",
+      link: "#aboutme",
       key: 1,
     },
     {
       name: "Technologies",
-      link: "",
+      link: "#technologies",
       key: 2,
     },
     {
       name: "Achievements",
-      link: "",
+      link: "#achievements",
       key: 3,
     },
     {
@@ -24,7 +27,7 @@ const NavBarSections = () => {
     },
     {
       name: "Contact Me",
-      link: "",
+      link: "#contactMe",
       key: 5,
     },
     {
@@ -39,7 +42,9 @@ const NavBarSections = () => {
       {sections.map((section) => {
         return (
           <div className={styles.section} key={section.key}>
-            <h2>{section.name}</h2>
+            <Link href={section.link}>
+              <h2>{section.name}</h2>
+            </Link>
             <hr></hr>
           </div>
         );
