@@ -25,10 +25,14 @@ const NavBar = (props) => {
 
   return (
     <nav className={`${styles.nav} ${position > 0 ? styles.navNonTop : ""}`}>
-      <h2>Andrew</h2>
-      <h3>{position}</h3>
+      <img className={styles.logo} src="/media/logo.png" alt="logo" />
+      <img className={styles.menu} src="/media/menuOpen.png" alt="menu" />
     </nav>
   );
 };
 
 export default NavBar;
+
+{
+  /* <div>Icons made by <a href="https://www.flaticon.com/authors/azmianshori" title="azmianshori">azmianshori</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> */
+}

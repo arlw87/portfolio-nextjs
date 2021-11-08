@@ -6,11 +6,25 @@
   position: fixed;
   top: 0;
   width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.2rem 1.5rem;
+  height: 10vh;
+  align-items: center;
 }
 
 .navNonTop {
   background-color: primary-color;
   transition: 0.5s;
+  -webkit-box-shadow: 0px 10px 9px -8px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 10px 9px -8px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 10px 9px -8px rgba(0, 0, 0, 0.75);
 }
 
-/* background-color: rgba(0, 0, 0, 0.1); */
+.logo {
+  height: 60%;
+}
+
+.menu {
+  height: 60%;
+}
