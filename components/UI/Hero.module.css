@@ -1,5 +1,7 @@
+@value colors: '../../styles/colors.css';
+@value primary-color, secondary-color, main-text-color from colors;
+
 .heroContainer {
-  background-color: #1e2b38;
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -17,7 +19,7 @@
 }
 
 .name {
-  color: #e9b41b;
+  color: secondary-color;
   font-weight: 300;
   font-size: 56px;
   margin: 0;
@@ -36,7 +38,7 @@
 }
 
 .job h1 {
-  color: #ffffff;
+  color: main-text-color;
   margin: 0;
   font-weight: 200;
   font-size: 66px;
@@ -44,7 +46,7 @@
 }
 
 .heroContainer button {
-  background-color: #e9b41b;
+  background-color: secondary-color;
   font-weight: 300;
   font-size: 32px;
   font-family: "Roboto Condensed", sans-serif;
