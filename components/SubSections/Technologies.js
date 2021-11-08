@@ -65,6 +65,8 @@ const listOfTech = [
   },
 ];
 
+//Icons from https://icon-icons.com/
+
 const Technologies = (props) => {
   return (
     <SubSectionLayout title={"Technologies"} isBackgroundOne={false}>

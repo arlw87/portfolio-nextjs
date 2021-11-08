@@ -7,6 +7,7 @@
   justify-content: center;
   align-items: center;
   padding: 5%;
+  width: 100%;
 }
 
 .subSectionContainer h2 {
@@ -22,4 +23,8 @@
 
 .backgroundTwo {
   background-color: secondary-color;
+}
+
+.content {
+  width: 100%;
 }

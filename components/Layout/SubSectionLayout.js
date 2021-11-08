@@ -10,7 +10,7 @@ const SubSectionLayout = (props) => {
   return (
     <div className={`${styles.subSectionContainer} ${background}`}>
       <h2>{props.title}</h2>
-      <div>{props.children}</div>
+      <div className={styles.content}>{props.children}</div>
     </div>
   );
 };

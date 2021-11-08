@@ -4,6 +4,7 @@ import styles from "./HomeLayout.module.css";
 import AboutMe from "../SubSections/AboutMe";
 import Technologies from "../SubSections/Technologies";
 import Achievements from "../SubSections/Achievements";
+import Contact from "../SubSections/Contact";
 
 const HomeLayout = () => {
   return (
@@ -13,6 +14,7 @@ const HomeLayout = () => {
       <AboutMe></AboutMe>
       <Technologies></Technologies>
       <Achievements></Achievements>
+      <Contact></Contact>
     </div>
   );
 };
