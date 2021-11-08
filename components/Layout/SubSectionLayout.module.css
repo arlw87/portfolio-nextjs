@@ -6,13 +6,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0 5%;
+  padding: 5%;
 }
 
 .subSectionContainer h2 {
   font-weight: 300;
   font-size: 3rem;
   color: accent-color;
+  margin: 0.5rem;
 }
 
 .backgroundOne {
