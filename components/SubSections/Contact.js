@@ -17,7 +17,7 @@ const Contact = (props) => {
           <img alt="Email" src="./media/contact/email.png" />
         </Link>
         <Link href="https://www.linkedin.com/in/andrew-white-15a03941/">
-          <img alt="LinkedIn" src="./media/contact/linkedin.png" />
+          <img alt="LinkedIn" src="./media/contact/linkedinLogo.png" />
         </Link>
       </div>
     </SubSectionLayout>
