@@ -3,6 +3,7 @@ import NavBar from "../UI/NavBar";
 import styles from "./HomeLayout.module.css";
 import AboutMe from "../SubSections/AboutMe";
 import Technologies from "../SubSections/Technologies";
+import Achievements from "../SubSections/Achievements";
 
 const HomeLayout = () => {
   return (
@@ -11,6 +12,7 @@ const HomeLayout = () => {
       <Hero></Hero>
       <AboutMe></AboutMe>
       <Technologies></Technologies>
+      <Achievements></Achievements>
     </div>
   );
 };
