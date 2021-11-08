@@ -46,7 +46,6 @@ const NavBar = (props) => {
 
   return (
     <nav
-      className={styles.navContainer}
       className={`${styles.navContainer} ${
         position > 0 || menuOpen ? styles.pageMoved : ""
       }`}
