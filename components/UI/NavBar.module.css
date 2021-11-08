@@ -1,0 +1,16 @@
+@value colors: '../../styles/colors.css';
+@value primary-color, secondary-color, main-text-color from colors;
+
+.nav {
+  color: black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navNonTop {
+  background-color: primary-color;
+  transition: 0.5s;
+}
+
+/* background-color: rgba(0, 0, 0, 0.1); */
