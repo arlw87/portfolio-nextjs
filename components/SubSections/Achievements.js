@@ -6,7 +6,7 @@ const Achievements = (props) => {
   return (
     <SubSectionLayout
       title={"Achievements"}
-      backgroundOne={true}
+      isBackgroundOne={true}
       id={"achievements"}
     >
       <div className={styles.container}>
