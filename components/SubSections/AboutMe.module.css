@@ -4,11 +4,29 @@
 
 .textContainer {
   background-color: main-text-color;
-  padding: 1rem;
+  padding: 150px 1rem 1rem 1rem;
   font-family: "Vollkorn", serif;
   font-weight: 300;
+  grid-row-start: 2;
+  grid-row-end: 5;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  z-index: 1;
 }
 
 .image {
-  width: 70%;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  /* height: 100%; */
+  width: 300px;
+  z-index: 2;
+  justify-content: center;
+}
+
+.contentContainer {
+  display: grid;
+  grid-template-rows: 150px 150px repeat(2, 1fr);
+  justify-items: center;
 }

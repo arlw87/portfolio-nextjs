@@ -4,7 +4,7 @@ import styles from "./AboutMe.module.css";
 const AboutMe = () => {
   return (
     <SubSectionLayout title={"About Me"} isBackgroundOne={true}>
-      <div className={styles.contentContaner}>
+      <div className={styles.contentContainer}>
         <img className={styles.image} src="./media/b_w.png"></img>
         <div className={styles.textContainer}>
           <p>
