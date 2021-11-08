@@ -1,1 +1,53 @@
+.heroContainer {
+  background-color: #1e2b38;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: 300;
+  background-size: cover;
+  background-image: linear-gradient(
+      rgba(30, 43, 56, 0.71),
+      rgba(30, 43, 56, 0.71)
+    ),
+    url("/media/abstract.jpg");
+  background-position: center;
+}
 
+.name {
+  color: #e9b41b;
+  font-weight: 300;
+  font-size: 56px;
+  margin: 0;
+  font-family: "Roboto Condensed", sans-serif;
+  padding: 0;
+}
+
+.job {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: 1rem 0 2rem 0;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.job h1 {
+  color: #ffffff;
+  margin: 0;
+  font-weight: 200;
+  font-size: 66px;
+  text-align: center;
+}
+
+.heroContainer button {
+  background-color: #e9b41b;
+  font-weight: 300;
+  font-size: 32px;
+  font-family: "Roboto Condensed", sans-serif;
+  border: none;
+  padding: 0.5rem 1rem;
+}
