@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./NavBar.module.css";
 import { useEffect, useState } from "react";
+import NavBarSections from "./NavBarSections";
 
 const getWindowPosition = () => {
   if (window !== "undefined") {
@@ -12,6 +13,7 @@ const getWindowPosition = () => {
 
 const NavBar = (props) => {
   const [position, setPosition] = useState(0);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -23,10 +25,43 @@ const NavBar = (props) => {
 
   const classes = `styles.nav ${position > 0 ? "styles.nav-non-top" : ""}`;
 
+  //When the menu opens you want scrolling to be deactivated
+  //so set overflow of the body to hidden so there is no overflow off the page to scroll too
+  //when the menu is close you want to be able to scroll again so get overflow to scroll for body
+  //This is directly manipulating the DOM, but it is the parent of where the react app is located
+  //the body rather than manipulating the DOM that the React DOM manipulates.
+  //https://stackoverflow.com/questions/39962757/prevent-scrolling-using-css-on-react-rendered-components
+
+  const menuHandler = (event) => {
+    console.log("Menu Pressed");
+    setMenuOpen((prev) => {
+      if (prev === false) {
+        document.body.style.overflow = "hidden";
+      } else {
+        document.body.style.overflow = "scroll";
+      }
+
+      return !prev;
+    });
+  };
+
   return (
-    <nav className={`${styles.nav} ${position > 0 ? styles.navNonTop : ""}`}>
-      <img className={styles.logo} src="/media/logo.png" alt="logo" />
-      <img className={styles.menu} src="/media/menuOpen.png" alt="menu" />
+    <nav
+      className={styles.navContainer}
+      className={`${styles.navContainer} ${
+        position > 0 || menuOpen ? styles.pageMoved : ""
+      }`}
+    >
+      <div className={styles.navTop}>
+        <img className={styles.logo} src="/media/logo.png" alt="logo" />
+        <img
+          className={styles.menu}
+          src="/media/menuOpen.png"
+          alt="menu"
+          onClick={menuHandler}
+        />
+      </div>
+      {menuOpen && <NavBarSections></NavBarSections>}
     </nav>
   );
 };
