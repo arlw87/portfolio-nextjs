@@ -33,7 +33,6 @@ const NavBar = (props) => {
   //https://stackoverflow.com/questions/39962757/prevent-scrolling-using-css-on-react-rendered-components
 
   const menuHandler = (event) => {
-    console.log("Menu Pressed");
     setMenuOpen((prev) => {
       if (prev === false) {
         document.body.style.overflow = "hidden";
@@ -61,7 +60,7 @@ const NavBar = (props) => {
           onClick={menuHandler}
         />
       </div>
-      {menuOpen && <NavBarSections></NavBarSections>}
+      {menuOpen && <NavBarSections menuHandler={menuHandler}></NavBarSections>}
     </nav>
   );
 };
