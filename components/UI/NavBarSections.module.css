@@ -1,5 +1,5 @@
 @value colors: '../../styles/colors.css';
-@value primary-color, secondary-color, main-text-color from colors;
+@value primary-color, secondary-color, accent-color, main-text-color from colors;
 
 .sectionsContainer {
   height: 90vh;
@@ -16,6 +16,6 @@
 }
 
 .section hr {
-  border-color: secondary-color;
+  border-color: accent-color;
   width: 50%;
 }

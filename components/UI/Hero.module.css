@@ -1,5 +1,5 @@
 @value colors: '../../styles/colors.css';
-@value primary-color, secondary-color, main-text-color from colors;
+@value primary-color, secondary-color, accent-color, main-text-color from colors;
 
 .heroContainer {
   width: 100vw;
@@ -19,7 +19,7 @@
 }
 
 .name {
-  color: secondary-color;
+  color: accent-color;
   font-size: 56px;
   margin: 0;
   padding: 0;
@@ -44,7 +44,7 @@
 }
 
 .heroContainer button {
-  background-color: secondary-color;
+  background-color: accent-color;
   font-size: 32px;
   border: none;
   padding: 0.5rem 1rem;
