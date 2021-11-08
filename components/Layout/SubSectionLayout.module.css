@@ -1,0 +1,24 @@
+@value colors: '../../styles/colors.css';
+@value primary-color, secondary-color, accent-color, main-text-color from colors;
+
+.subSectionContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 5%;
+}
+
+.subSectionContainer h2 {
+  font-weight: 300;
+  font-size: 3rem;
+  color: accent-color;
+}
+
+.backgroundOne {
+  background-color: primary-color;
+}
+
+.backgroundTwo {
+  background-color: secondary-color;
+}
