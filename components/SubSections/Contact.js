@@ -6,7 +6,7 @@ const Contact = (props) => {
   return (
     <SubSectionLayout
       title={"Contact Me"}
-      isBackgroundOne={false}
+      isBackgroundOne={true}
       id={"contactMe"}
     >
       <div id="contact" className={styles.container}>
