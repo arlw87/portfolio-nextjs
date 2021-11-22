@@ -7,7 +7,7 @@ import Achievements from "../SubSections/Achievements";
 import Contact from "../SubSections/Contact";
 import MyWork from "../SubSections/MyWork";
 
-const HomeLayout = () => {
+const HomeLayout = (props) => {
   return (
     <div className={styles.homeContainer}>
       <NavBar></NavBar>
@@ -15,7 +15,7 @@ const HomeLayout = () => {
       <AboutMe></AboutMe>
       <Technologies></Technologies>
       <Achievements></Achievements>
-      <MyWork></MyWork>
+      <MyWork projects={props.projects}></MyWork>
       <Contact></Contact>
     </div>
   );

@@ -28,14 +28,18 @@ import Badge from "./Badge";
 //https://stackoverflow.com/questions/45514676/react-check-if-element-is-visible-in-dom
 
 const ProjectCard = (props) => {
+  const { title, summary, tech } = props;
+
   return (
     <div className={styles.card}>
       <div className={styles.detailContainer}>
         <div className={styles.top}>
-          <h3>Timer App</h3>
+          <h3>{title}</h3>
           <div className={styles.tech}></div>
         </div>
-        <div className={styles.detail}></div>
+        <div className={styles.detail}>
+          <p>{summary}</p>
+        </div>
       </div>
     </div>
   );
