@@ -35,7 +35,14 @@ const ProjectCard = (props) => {
       <div className={styles.detailContainer}>
         <div className={styles.top}>
           <h3>{title}</h3>
-          <div className={styles.tech}></div>
+          <div className={styles.tech}>
+            <Badge
+              imageSource={"/media/badges/python.png"}
+              alt={"test"}
+              key={1}
+              link={"www.bbc.co.uk"}
+            ></Badge>
+          </div>
         </div>
         <div className={styles.detail}>
           <p>{summary}</p>
